@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Enable DaisyUI and set themes */
+@plugin "daisyui" {
+  themes: light --default, dark --prefers-dark;
+}
+
+/* Base Theme Variables */
+@theme {
+  --breakpoint-2xl: 1320px;
+  --font-script: 'Space Grotesk', sans-serif;
+}
+
+/* Light Theme */
+@plugin "daisyui/theme" {
+  name: "light";
+
+  /* Primary Colors */
+  --color-primary: #C2317E;
+  --color-primary-content: #f0f0f0;
+  --color-secondary: #DC4F48;
+  --color-secondary-content: #1a202c;
+  --color-accent: #63b3ed;
+  --color-accent-content: #1a202c;
+  --color-neutral: #1a202c;
+
+  /* Base Colors */
+  --color-base-100: #ffffff;
+  --color-base-200: #f7fafc;
+  --color-base-300: #e2e8f0;
+  --color-base-content: #2a3549;
+}
+
+/* Dark Theme */
+@plugin "daisyui/theme" {
+  name: "dark";
+
+  /* Primary Colors */
+  --color-primary: #C2317E;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #DC4F48;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #E96127;
+  --color-accent-content: #1A1A1A;
+  --color-neutral: #f7fafc;
+
+  /* Base Colors */
+  --color-base-100: #071016;
+  --color-base-200: #0d131a;
+  --color-base-300: #29323d;
+  --color-base-content: #a0aebe;
+--gradient-primary: linear-gradient(
+  135deg,
+  #06080C 0%,
+  #0A0D12 60%,
+  #1E0E18 80%,
+  #2E141C 100%
+);
+
+
+}
+
+@layer base {
+  body {
+    font-family: var(--font-script);
+    background-image: var(--gradient-primary);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.smooth-bounce3 {
+  animation: smoothBounce 3.4s ease-in-out infinite;
+}
+.smooth-bounce2 {
+  animation: smoothBounce 3.2s ease-in-out infinite;
+}
+.smooth-bounce1 {
+  animation: smoothBounce 3s ease-in-out infinite;
+}
+
+/* Swiper Custom Styles */
+.swiper {
+  overflow: hidden !important;
+}
+.swiper-slide {
+  transform-style: preserve-3d;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.swiper-slide-active {
+  transform: scale(1.05) translateZ(0);
+}
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.95) translateZ(-50px);
+  opacity: 0.7;
+}
+.animate-shine {
+  animation: shine 1.2s linear forwards;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
