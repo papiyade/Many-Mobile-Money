@@ -238,7 +238,9 @@ const Navbar = () => {
                         </motion.button>
 
                         {/* CTA Button */}
-                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => navigate('/login')}>
+                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() =>
+                             navigate('/')}>
+                                 {/* Naviguer vers Google Play ou App Store après avoir cliqué */}
                             <Button className="hidden sm:flex text-primary-content" size="lg" iconClassName="text-primary-content ">Télécharger</Button>
                         </motion.div>
 
@@ -299,7 +301,8 @@ const Navbar = () => {
                                         transition={{ delay: 0.4 }}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        <Button className="w-full bg-primary hover:shadow-xl transition-all duration-300 font-semibold" onClick={() => navigate('/login')} size="lg" icon={FiDownload} iconClassName="text-primary-content">Télécharger</Button>
+                                        <Button className="w-full bg-primary hover:shadow-xl transition-all duration-300 font-semibold" onClick={() =>
+                                             navigate('/')} size="lg" icon={FiDownload} iconClassName="text-primary-content">Télécharger</Button>
                                     </motion.div>
                                 </motion.div>
                             </div>
