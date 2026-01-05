@@ -181,7 +181,7 @@ const Navbar = () => {
                     </motion.div>
 
                     {/* Desktop Navigation */}
-                    <motion.div className="hidden xl:flex items-center space-x-2" variants={itemVariants}>
+                    <motion.div className="hidden lg:flex items-center space-x-2" variants={itemVariants}>
                         {navItems.map((item, index) => {
                             const isHashLink = item.link.startsWith('/#');
                             const sectionId = isHashLink ? item.link.substring(2) : null;
