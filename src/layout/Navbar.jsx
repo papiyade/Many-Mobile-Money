@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../components/ui/Button';
-import { FiMoon, FiSun, FiStar, FiX, FiMenu } from 'react-icons/fi';
+import { FiMoon, FiSun, FiStar, FiX, FiMenu, FiDownload } from 'react-icons/fi';
 import { nav } from '../data/Navigation';
 import logo_light from "../assets/logo-light-many.png"
 import logo_dark from "../assets/logo-dark-many.png"
@@ -299,7 +299,7 @@ const Navbar = () => {
                                         transition={{ delay: 0.4 }}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        <Button className="w-full bg-primary hover:shadow-xl transition-all duration-300 font-semibold" onClick={() => navigate('/login')} size="lg" icon={FiStar} iconClassName="text-primary-content">Sign Up</Button>
+                                        <Button className="w-full bg-primary hover:shadow-xl transition-all duration-300 font-semibold" onClick={() => navigate('/login')} size="lg" icon={FiDownload} iconClassName="text-primary-content">Télécharger</Button>
                                     </motion.div>
                                 </motion.div>
                             </div>

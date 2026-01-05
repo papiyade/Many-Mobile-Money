@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import serviceBg from "../../assets/Sprinkle.jpg";
+import serviceBg from "../../assets/pattern-a.jpg";
 import cards from "../../data/data";
 import phoneImg from "../../assets/USER_WELCOME.png";
 import Section from "../ui/Section";
@@ -310,11 +310,10 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             className="my-auto lg:col-span-2 text-center md:text-left"
           >
-<h3 className="sm:text-4xl text-xl lg:text-6xl font-bold">
-  Créez votre portefeuille
-  <span className="text-secondary"> MANY dès maintenant</span>
-</h3>
-
+            <h3 className="sm:text-4xl text-xl lg:text-6xl font-bold">
+              Créez votre portefeuille
+              <span className="text-base-content"> MANY dès maintenant</span>
+            </h3>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -322,10 +321,9 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             className="mt-5 text-center mx-auto lg:my-auto "
           >
-<Button size="lg" variant="accent" icon={FaWallet}>
-  Ouvrir un compte
-</Button>
-
+            <Button size="lg" variant="secondary" icon={FaWallet}>
+              Ouvrir un compte
+            </Button>
           </motion.div>
 
           {/* Corder border top left */}

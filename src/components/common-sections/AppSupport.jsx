@@ -244,7 +244,7 @@ return (
               Contacter le support
             </Button>
             <Button variant="primary" size="lg" icon={FiMail} className="w-full">
-              Écrire au supports
+              Écrire au support
             </Button>
           </motion.div>
         </motion.div>

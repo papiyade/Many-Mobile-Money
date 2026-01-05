@@ -158,7 +158,7 @@ export const contacts = [
   {
     tag: "Téléphone",
     info: "Du lun au ven de 9h à 18h",
-    value: "+221 123 456 7890",
+    value: "+221 710307659",
     icon: FaPhone,
     color: "primary",
     hoverColor: "primary/20"
@@ -166,7 +166,7 @@ export const contacts = [
   {
     tag: "WhatsApp",
     info: "Disponible 24/7",
-    value: "+221 123 456 7890",
+    value: "+221 710307659",
     icon: FiMessageCircle,
     color: "primary",
     hoverColor: "primary/20"
