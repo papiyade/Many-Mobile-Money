@@ -1,9 +1,9 @@
 import { FaAward, FaCrown, FaDollarSign, FaPhone, FaPizzaSlice, FaShieldAlt, FaUser } from 'react-icons/fa'
 import img1 from '../assets/card-image/frameSend.png'
-import img2 from '../assets/card-image/img2.jpg'
+import img2 from '../assets/card-image/receiveMoney.svg'
 import img3 from '../assets/card-image/framePay.png'
-import img4 from '../assets/card-image/img4.jpg'
-import img5 from '../assets/card-image/img5.jpg'
+import img4 from '../assets/card-image/coin.svg'
+import img5 from '../assets/card-image/portefeuille.png'
 import img6 from '../assets/card-image/frameSecurite.png'
 import person1 from '../assets/team/person1.jpg';
 import person2 from '../assets/team/person2.jpg';

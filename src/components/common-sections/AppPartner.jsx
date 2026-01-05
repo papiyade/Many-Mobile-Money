@@ -5,6 +5,9 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/module
 import phone1 from "../../assets/SPLASH.png"
 import phone2 from "../../assets/USER_WELCOME.png"
 import phone3 from "../../assets/transfert_page.png"
+import phone4 from "../../assets/secret_code.png"
+import phone5 from "../../assets/account_type.png"
+import phone6 from "../../assets/balance.png"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -14,14 +17,31 @@ import SectionTitle from '../ui/SectionTitle';
 import { MdSmartphone } from 'react-icons/md';
 import { FiSend, FiBarChart2, FiLock } from 'react-icons/fi';
 const partners = [
-    { id: 'sony', name: "Sony", description: "Powerful trading tools and analytics" },
-    { id: 'facebook', name: "Facebook", description: "Social trading platform integration" },
-    { id: 'behance', name: "Behance", description: "Creative trading solutions" },
-    { id: 'envato', name: "Envato", description: "Marketplace trading tools" },
+  {
+    id: 'banks',
+    name: "Banques partenaires",
+    description: "Connexion sécurisée aux institutions financières"
+  },
+  {
+    id: 'merchants',
+    name: "Commerçants agréés",
+    description: "Paiement de factures et services"
+  },
+  {
+    id: 'agents',
+    name: "Réseau d’agents",
+    description: "Dépôt et retrait partout"
+  },
+  {
+    id: 'security',
+    name: "Fournisseurs de sécurité",
+    description: "Protection avancée des transactions"
+  }
 ];
 
+
 // Mock phone images - replace with your actual images
-const phoneImages = [phone1, phone2, phone3, phone2, phone1, phone2, phone3, phone2, phone1, phone2, phone3, phone1, phone2, phone3, phone1, phone2, phone3, phone1,
+const phoneImages = [phone1, phone2, phone3, phone4, phone5, phone6, phone1, phone2, phone3, phone4, phone5, phone6, phone1, phone2, phone3, phone4, phone5, phone6,
 ];
 
 const AppPartner = () => {
