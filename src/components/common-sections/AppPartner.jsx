@@ -8,6 +8,8 @@ import phone3 from "../../assets/transfert_page.png"
 import phone4 from "../../assets/secret_code.png"
 import phone5 from "../../assets/account_type.png"
 import phone6 from "../../assets/balance.png"
+import phone7 from "../../assets/sendMoney.png"
+import phone8 from "../../assets/QR.png"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -41,7 +43,7 @@ const partners = [
 
 
 // Mock phone images - replace with your actual images
-const phoneImages = [phone1, phone2, phone3, phone4, phone5, phone6, phone1, phone2, phone3, phone4, phone5, phone6, phone1, phone2, phone3, phone4, phone5, phone6,
+const phoneImages = [phone1, phone2, phone3, phone4, phone5, phone6, phone7, phone8, phone1, phone2, phone3, phone4, phone5, phone6, phone1, phone2, phone3, phone4, phone5, phone6,
 ];
 
 const AppPartner = () => {

@@ -123,7 +123,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, scale: 0.8, rotateY: 45 }}
         animate={{ opacity: 1, scale: 1, rotateY: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex justify-center items-center lg:order-2 order-1"
+        className="flex justify-center items-center md:order-2 order-1"
       >
         <Phone3D />
       </motion.div>
