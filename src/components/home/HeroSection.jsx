@@ -63,7 +63,7 @@ const HeroSection = () => {
         </motion.p>
 
         {/* Mise en avant solde */}
-        <div className="flex gap-8 mt-6">
+        {/* <div className="flex gap-8 mt-6">
           <div>
             <p className="text-sm text-base-content/60">
               Solde disponible
@@ -80,7 +80,7 @@ const HeroSection = () => {
               MANY
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* CTA */}
         <motion.div

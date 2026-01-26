@@ -13,7 +13,7 @@ const CommonPages = () => {
             <About />
             <Services />
             {/* <Pricing /> */}
-            <AppSupport />
+            {/* <AppSupport /> */}
             <AppPartner />
             {/* <OurTeam /> */}
             <ContectUs />
