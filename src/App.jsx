@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import RoutesPath from './router/RoutesPath'
 import Loader from './layout/Loader';
+import Footer from './layout/Footer';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

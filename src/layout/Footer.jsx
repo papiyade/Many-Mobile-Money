@@ -245,9 +245,14 @@ return (
                 © {new Date().getFullYear()} MANY. Tous droits réservés.
               </p>
               <p className="mt-4 md:mt-0">
-                <Link to="#" className="hover:text-secondary-content transition-colors duration-300">
+                <Link to="/terms-and-conditions" className="transition-colors duration-300 hover:text-secondary">
                   Conditions d’utilisation
                 </Link>
+                {" "} | {" "}
+                <Link to="/privacy-policy" className="hover:text-secondary transition-colors duration-300">
+                  Politique de confidentialité
+                </Link>
+
               </p>
             </motion.div>
           </div>

@@ -4,5 +4,5 @@ export const nav = [
   { name: "Services", link: "/#services" },
   // { name: "Pricing", link: "/#pricing" },
   { name: "Features", link: "/#features" },
-  { name: "Contactez-nous", link: "/#contact" }
+  { name: "Contactez-nous", link: "/#contact" },
 ];

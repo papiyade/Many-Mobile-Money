@@ -10,6 +10,8 @@ import NotFound from '../pages/NotFound'
 import UnderMaintenance from '../pages/UnderMaintence '
 import ServerError from '../pages/ServerError'
 import ComingSoon from '../pages/ComingSoon'
+import TermsAndConditions from '../pages/TermAndConditions'
+import PrivacyPolicy from '../pages/PrivacyPolicy'
 const RoutesPath = () => {
     return (
         <>
@@ -24,6 +26,8 @@ const RoutesPath = () => {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/under-maintenance" element={<UnderMaintenance />} />
                 <Route path="/server-error" element={<ServerError />} />
+                <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/coming-soon" element={<ComingSoon />} />
             </Routes>
         </>
